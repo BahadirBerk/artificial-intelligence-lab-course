@@ -1,0 +1,8 @@
+sayı=int(input("SAYI GİRİNİZ : "))
+yenisayı=str(sayı)
+uzunluk=len(yenisayı)
+sonuc=0
+while(uzunluk>0):
+    uzunluk=uzunluk-1
+    sonuc=sonuc+1
+print(sonuc)
