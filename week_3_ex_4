@@ -1,0 +1,8 @@
+a=int(input("SAYI A'YI GİRİNİZ :"))
+b=int(input("SAYI B'Yİ GİRİNİZ :"))
+c=int(input("SAYI C'Yİ GİRİNİZ :"))
+sonuc=0
+for i in range(a-1,b+1,1):
+    if(i%c==0):
+        sonuc=sonuc+1
+print("Sonuc= ",sonuc)
