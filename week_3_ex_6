@@ -1,0 +1,29 @@
+ilk_ip=input("IP GİRİNİZ :")
+string_ip=list()
+string_ip=ilk_ip.split('.')
+ip=[int(string_ip[0]),int(string_ip[1]),int(string_ip[2]),int(string_ip[3])]
+i=0
+while(i<6):
+    if(ip[3]<255):
+        ip[3]+=1
+        print(ip)
+    else:
+        ip[3]=0
+        if(ip[2]<255):
+            ip[2]+=1
+            print(ip)
+        else:
+            ip[2]=0
+            if(ip[1]<255):
+                ip[1]+=1
+                print(ip)
+            else:
+                ip[1]=0
+                if(ip[0]<255):
+                    ip[0]+=1
+                    print(ip)
+                else:
+                    print("YANLIŞ BİR IP DEĞERİ GİRDİNİZ")
+                    break;
+
+    i+=1
